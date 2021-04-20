@@ -11,9 +11,12 @@ namespace SelfStudyThreadsCount
         {
             _totalCount = totalCount;
         }
-        public void StartCounting()
+        public void StartCounting(object numberOfLoops)
         {
-
+            for (int i = 0; i < (int)numberOfLoops; i++)
+            {
+                _totalCount.count++;
+            }
         }
     }
 }
